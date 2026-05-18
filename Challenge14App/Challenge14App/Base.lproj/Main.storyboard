@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -65,6 +66,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forever Outsider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-FG-LEq" userLabel="songTitle">
                                 <rect key="frame" x="16" y="438" width="149.66666666666666" height="20"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="20"/>
+                                <color key="textColor" name="titleSongColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evergrey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaD-4n-63J" userLabel="albumTitle">
@@ -73,7 +75,7 @@
                                     <constraint firstAttribute="height" constant="21" id="rff-Pj-0Cc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
-                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="titleArtistColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-If-7Ns" userLabel="songSlider">
@@ -82,9 +84,9 @@
                                     <constraint firstAttribute="height" constant="7" id="NKV-So-vqY"/>
                                     <constraint firstAttribute="width" constant="358" id="lXX-Ng-C1q"/>
                                 </constraints>
-                                <color key="minimumTrackTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="minimumTrackTintColor" name="sliderForegroundColor"/>
+                                <color key="maximumTrackTintColor" name="sliderSecondForegroundColor"/>
+                                <color key="thumbTintColor" name="sliderSongThumbColor"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-9Z-fDH" userLabel="initialTimeMusic">
                                 <rect key="frame" x="16" y="509" width="28" height="16"/>
@@ -92,7 +94,7 @@
                                     <constraint firstAttribute="height" constant="16" id="P5N-TR-VAM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsC-QT-L8w" userLabel="endTimeMusic">
@@ -101,7 +103,7 @@
                                     <constraint firstAttribute="height" constant="16" id="dpV-YM-Nj6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96K-zG-rEw" userLabel="pauseButton">
@@ -115,7 +117,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
                                     </preferredSymbolConfiguration>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="buttonColor"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iET-iR-6hF" userLabel="forwardButton">
@@ -125,7 +127,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
                                     </preferredSymbolConfiguration>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="buttonColor"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ce-dF-qKe" userLabel="backButton">
@@ -135,17 +137,17 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
                                     </preferredSymbolConfiguration>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="buttonColor"/>
                                 </buttonConfiguration>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UDf-1n-v7r">
                                 <rect key="frame" x="16" y="636" width="358" height="34"/>
-                                <color key="tintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" name="sliderSecondForegroundColor"/>
                                 <imageReference key="minimumValueImage" image="speaker.fill" catalog="system" symbolScale="medium"/>
                                 <imageReference key="maximumValueImage" image="speaker.wave.2.fill" catalog="system" symbolScale="medium"/>
-                                <color key="minimumTrackTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="thumbTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" name="sliderForegroundColor"/>
+                                <color key="maximumTrackTintColor" name="sliderSecondForegroundColor"/>
+                                <color key="thumbTintColor" name="sliderVolumeThumbColor"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6e-IP-iz5" userLabel="optionButton">
                                 <rect key="frame" x="326" y="442" width="48" height="38"/>
@@ -154,7 +156,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g8b-K0-B1x"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="XsC-QT-L8w" firstAttribute="leading" secondItem="2iy-9Z-fDH" secondAttribute="trailing" constant="294" id="5RL-ul-mJQ"/>
                             <constraint firstItem="zaD-4n-63J" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="7hN-zw-8qR"/>
@@ -206,9 +208,33 @@
         <image name="pause.fill" catalog="system" width="114" height="128"/>
         <image name="speaker.fill" catalog="system" width="128" height="125"/>
         <image name="speaker.wave.2.fill" catalog="system" width="128" height="88"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="backgroundColor">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sliderForegroundColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sliderSecondForegroundColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sliderSongThumbColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sliderVolumeThumbColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleArtistColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="titleSongColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
