@@ -65,26 +65,30 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumCover" translatesAutoresizingMaskIntoConstraints="NO" id="hbF-dB-aak">
                                 <rect key="frame" x="16" y="75" width="358" height="356"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="358" id="KUT-La-MOi"/>
-                                    <constraint firstAttribute="height" constant="356" id="QPQ-Mb-cBW"/>
+                                    <constraint firstAttribute="width" constant="358" id="KUT-La-MOi">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="358"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="356" id="QPQ-Mb-cBW">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="356"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" secondItem="hbF-dB-aak" secondAttribute="height" multiplier="179:178" id="qMB-Rq-mt1"/>
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forever Outsider" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-FG-LEq" userLabel="songTitle">
-                                <rect key="frame" x="16" y="454" width="146.33333333333334" height="24"/>
+                                <rect key="frame" x="16" y="463" width="146.33333333333334" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" name="titleSongColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evergrey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaD-4n-63J" userLabel="albumTitle">
-                                <rect key="frame" x="16.000000000000004" y="478" width="60.333333333333343" height="18"/>
+                                <rect key="frame" x="16.000000000000004" y="487" width="60.333333333333343" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" name="titleArtistColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-If-7Ns" userLabel="songSlider">
-                                <rect key="frame" x="16" y="512" width="358" height="7"/>
+                                <rect key="frame" x="16" y="521" width="358" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="NKV-So-vqY"/>
                                 </constraints>
@@ -93,7 +97,7 @@
                                 <color key="thumbTintColor" name="sliderSongThumbColor"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-9Z-fDH" userLabel="initialTimeMusic">
-                                <rect key="frame" x="16" y="526" width="28" height="16"/>
+                                <rect key="frame" x="16" y="535" width="28" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="P5N-TR-VAM"/>
                                 </constraints>
@@ -102,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsC-QT-L8w" userLabel="endTimeMusic">
-                                <rect key="frame" x="339.33333333333331" y="526" width="34.666666666666686" height="16"/>
+                                <rect key="frame" x="339.33333333333331" y="535" width="34.666666666666686" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="dpV-YM-Nj6"/>
                                 </constraints>
@@ -111,7 +115,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="play" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="96K-zG-rEw" userLabel="pauseButton">
-                                <rect key="frame" x="169.66666666666666" y="565" width="51" height="60"/>
+                                <rect key="frame" x="169.66666666666666" y="584" width="51" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" priority="900" constant="64" id="AQS-8K-MHs"/>
                                     <constraint firstAttribute="width" secondItem="96K-zG-rEw" secondAttribute="height" multiplier="17:20" id="Hsq-A2-22Z"/>
@@ -127,7 +131,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iET-iR-6hF" userLabel="forwardButton">
-                                <rect key="frame" x="260.66666666666669" y="565" width="83.666666666666686" height="52"/>
+                                <rect key="frame" x="260.66666666666669" y="584" width="83.666666666666686" height="52"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
@@ -137,7 +141,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ce-dF-qKe" userLabel="backButton">
-                                <rect key="frame" x="46.000000000000007" y="565" width="83.666666666666686" height="52"/>
+                                <rect key="frame" x="46.000000000000007" y="584" width="83.666666666666686" height="52"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
@@ -146,8 +150,8 @@
                                     <color key="baseForegroundColor" name="buttonColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UDf-1n-v7r">
-                                <rect key="frame" x="16" y="649" width="358" height="34"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UDf-1n-v7r" userLabel="volumeSlider">
+                                <rect key="frame" x="16" y="690" width="358" height="34"/>
                                 <color key="tintColor" name="sliderSecondForegroundColor"/>
                                 <imageReference key="minimumValueImage" image="speaker.fill" catalog="system" symbolScale="medium"/>
                                 <imageReference key="maximumValueImage" image="speaker.wave.2.fill" catalog="system" symbolScale="medium"/>
@@ -164,38 +168,42 @@
                         <viewLayoutGuide key="safeArea" id="g8b-K0-B1x"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zaD-4n-63J" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="423" id="7hN-zw-8qR">
-                                <variation key="heightClass=compact-widthClass=regular" constant="423"/>
+                            <constraint firstItem="zaD-4n-63J" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="408" id="7hN-zw-8qR">
+                                <variation key="heightClass=compact-widthClass=regular" constant="408"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="96K-zG-rEw" firstAttribute="centerX" secondItem="B2a-X6-vAH" secondAttribute="centerX" constant="200" id="9bh-EE-emg">
                                 <variation key="heightClass=compact-widthClass=regular" constant="200"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="rjB-FG-LEq" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="80" id="Cox-Gj-1lS">
-                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="395"/>
+                            <constraint firstItem="rjB-FG-LEq" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="70" id="Cox-Gj-1lS">
+                                <variation key="heightClass=compact-widthClass=regular" constant="70"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="404"/>
                             </constraint>
-                            <constraint firstItem="iET-iR-6hF" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" priority="900" constant="46" id="DaY-lN-awV"/>
+                            <constraint firstItem="iET-iR-6hF" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" priority="900" constant="56" id="DaY-lN-awV"/>
                             <constraint firstItem="d6e-IP-iz5" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="80" id="Eee-7a-zTZ">
                                 <variation key="heightClass=compact-widthClass=regular" constant="80"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="400"/>
                             </constraint>
-                            <constraint firstItem="UDf-1n-v7r" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="423" id="FVJ-ep-4wu">
-                                <variation key="heightClass=compact-widthClass=regular" constant="423"/>
+                            <constraint firstItem="UDf-1n-v7r" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="408" id="FVJ-ep-4wu">
+                                <variation key="heightClass=compact-widthClass=regular" constant="408"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
-                            <constraint firstItem="rjB-FG-LEq" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="423" id="MKI-tB-VgK">
-                                <variation key="heightClass=compact-widthClass=regular" constant="423"/>
+                            <constraint firstItem="g8b-K0-B1x" firstAttribute="bottom" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="14" id="INj-5v-wGl">
+                                <variation key="heightClass=compact-widthClass=regular" constant="14"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="387"/>
+                            </constraint>
+                            <constraint firstItem="rjB-FG-LEq" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="408" id="MKI-tB-VgK">
+                                <variation key="heightClass=compact-widthClass=regular" constant="408"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="RH5-If-7Ns" firstAttribute="top" secondItem="zaD-4n-63J" secondAttribute="bottom" constant="16" id="Mho-hc-asz"/>
-                            <constraint firstItem="2iy-9Z-fDH" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="423" id="OII-bl-YnB">
-                                <variation key="heightClass=compact-widthClass=regular" constant="423"/>
+                            <constraint firstItem="2iy-9Z-fDH" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="408" id="OII-bl-YnB">
+                                <variation key="heightClass=compact-widthClass=regular" constant="408"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="s7S-Tx-iOK" secondAttribute="trailing" id="S4q-aY-E5g"/>
-                            <constraint firstItem="1Ce-dF-qKe" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" priority="900" constant="46" id="WPG-Um-PVP"/>
+                            <constraint firstItem="1Ce-dF-qKe" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" priority="900" constant="56" id="WPG-Um-PVP"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="hbF-dB-aak" secondAttribute="trailing" constant="350" id="XWh-3U-g3w">
                                 <variation key="heightClass=compact-widthClass=regular" constant="350"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
@@ -211,17 +219,20 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                             </constraint>
-                            <constraint firstItem="hbF-dB-aak" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="dVw-81-3bp"/>
-                            <constraint firstItem="96K-zG-rEw" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="46" id="dgm-1N-Nu1"/>
+                            <constraint firstItem="hbF-dB-aak" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" id="dVw-81-3bp">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="96K-zG-rEw" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="56" id="dgm-1N-Nu1"/>
                             <constraint firstItem="XsC-QT-L8w" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="7" id="e0U-CX-2en"/>
                             <constraint firstItem="2iy-9Z-fDH" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="7" id="fKX-0a-Y8j"/>
-                            <constraint firstItem="UDf-1n-v7r" firstAttribute="top" secondItem="96K-zG-rEw" secondAttribute="bottom" constant="24" id="i5H-De-EZw"/>
+                            <constraint firstItem="UDf-1n-v7r" firstAttribute="top" secondItem="96K-zG-rEw" secondAttribute="bottom" constant="46" id="i5H-De-EZw"/>
                             <constraint firstItem="96K-zG-rEw" firstAttribute="leading" secondItem="1Ce-dF-qKe" secondAttribute="trailing" constant="20" id="koz-Kt-ovs">
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                             </constraint>
-                            <constraint firstItem="RH5-If-7Ns" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="423" id="mBj-Kb-x3r">
-                                <variation key="heightClass=compact-widthClass=regular" constant="423"/>
+                            <constraint firstItem="RH5-If-7Ns" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="408" id="mBj-Kb-x3r">
+                                <variation key="heightClass=compact-widthClass=regular" constant="408"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="14" id="mq5-eh-JMf">
