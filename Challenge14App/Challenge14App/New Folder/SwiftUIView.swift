@@ -12,43 +12,6 @@ struct SwiftUIView: View {
     @State var songs: [Songs]
     var body: some View {
         NavigationStack(){
-            HStack{
-                Button{
-                    dismiss()
-                }label: {
-                    HStack{
-                        Image(systemName: "chevron.left")
-                        Text("Listen now")
-                    }
-                    .foregroundStyle(.red)
-                }
-                
-                Spacer()
-                
-                Button{
-                    
-                }label: {
-                    Image(systemName: "checkmark")
-                        .padding(6)
-                        .padding(.vertical, 1)
-                        .foregroundStyle(Color.red)
-                }
-                .background(.btnBg)
-                .clipShape(RoundedRectangle(cornerRadius: 160000, style: .continuous))
-                
-                Button{
-                    
-                }label: {
-                    Image(systemName: "ellipsis")
-                        .padding(6)
-                        .padding(.vertical, 6)
-                        .foregroundStyle(Color.red)
-                }
-                .background(.btnBg)
-                .clipShape(RoundedRectangle(cornerRadius: 160000, style: .continuous))
-                
-            }
-            .padding()
             
             ScrollView{
                 Image("Album")
