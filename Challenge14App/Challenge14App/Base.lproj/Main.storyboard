@@ -143,6 +143,15 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UDf-1n-v7r">
+                                <rect key="frame" x="16" y="636" width="358" height="34"/>
+                                <color key="tintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <imageReference key="minimumValueImage" image="volume.fill" catalog="system" symbolScale="medium"/>
+                                <imageReference key="maximumValueImage" image="volume.2.fill" catalog="system" symbolScale="medium"/>
+                                <color key="minimumTrackTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g8b-K0-B1x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -153,6 +162,7 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rjB-FG-LEq" secondAttribute="trailing" constant="20" symbolic="YES" id="9sv-6Q-PCc"/>
                             <constraint firstItem="iET-iR-6hF" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="46" id="DaY-lN-awV"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="2iy-9Z-fDH" secondAttribute="trailing" constant="346" id="EE7-rj-fTi"/>
+                            <constraint firstItem="UDf-1n-v7r" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="FVJ-ep-4wu"/>
                             <constraint firstItem="iET-iR-6hF" firstAttribute="leading" secondItem="96K-zG-rEw" secondAttribute="trailing" constant="40" id="Jre-lq-zka"/>
                             <constraint firstItem="rjB-FG-LEq" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="MKI-tB-VgK"/>
                             <constraint firstItem="RH5-If-7Ns" firstAttribute="top" secondItem="zaD-4n-63J" secondAttribute="bottom" constant="16" id="Mho-hc-asz"/>
@@ -164,6 +174,8 @@
                             <constraint firstItem="1Ce-dF-qKe" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="59" id="Y9N-Tg-klz"/>
                             <constraint firstItem="zaD-4n-63J" firstAttribute="top" secondItem="rjB-FG-LEq" secondAttribute="bottom" id="YSC-9n-HuH"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zaD-4n-63J" secondAttribute="trailing" symbolic="YES" id="Zjw-wo-TF7"/>
+                            <constraint firstItem="UDf-1n-v7r" firstAttribute="top" secondItem="96K-zG-rEw" secondAttribute="bottom" constant="24" id="asJ-C8-dzk"/>
+                            <constraint firstItem="UDf-1n-v7r" firstAttribute="trailing" secondItem="XsC-QT-L8w" secondAttribute="trailing" id="bHH-IJ-MPx"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="XsC-QT-L8w" secondAttribute="trailing" constant="16" id="bPB-on-foN"/>
                             <constraint firstItem="96K-zG-rEw" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="163" id="cog-bO-B3Q"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="dVw-81-3bp"/>
@@ -190,6 +202,8 @@
         <image name="backward.fill" catalog="system" width="128" height="76"/>
         <image name="forward.fill" catalog="system" width="128" height="76"/>
         <image name="pause.fill" catalog="system" width="114" height="128"/>
+        <image name="volume.2.fill" catalog="system" width="128" height="88"/>
+        <image name="volume.fill" catalog="system" width="128" height="125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
