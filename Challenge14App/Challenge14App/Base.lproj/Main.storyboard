@@ -58,15 +58,48 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="358" id="KUT-La-MOi"/>
                                     <constraint firstAttribute="height" constant="356" id="QPQ-Mb-cBW"/>
+                                    <constraint firstAttribute="width" secondItem="hbF-dB-aak" secondAttribute="height" multiplier="179:178" id="qMB-Rq-mt1"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forever Outsider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-FG-LEq" userLabel="songTitle">
+                                <rect key="frame" x="16" y="438" width="149.66666666666666" height="20"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evergrey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaD-4n-63J" userLabel="albumTitle">
+                                <rect key="frame" x="16" y="458" width="326" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rff-Pj-0Cc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="17"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6e-IP-iz5" userLabel="optionButton">
+                                <rect key="frame" x="350" y="449" width="48" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Qgx-cr-Rpg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="IconOptions"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g8b-K0-B1x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zaD-4n-63J" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="7hN-zw-8qR"/>
+                            <constraint firstItem="rjB-FG-LEq" firstAttribute="top" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="7" id="90b-FV-FQ8"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rjB-FG-LEq" secondAttribute="trailing" constant="20" symbolic="YES" id="9sv-6Q-PCc"/>
+                            <constraint firstItem="rjB-FG-LEq" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="MKI-tB-VgK"/>
+                            <constraint firstItem="zaD-4n-63J" firstAttribute="top" secondItem="rjB-FG-LEq" secondAttribute="bottom" id="YSC-9n-HuH"/>
+                            <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zaD-4n-63J" secondAttribute="trailing" symbolic="YES" id="Zjw-wo-TF7"/>
+                            <constraint firstItem="d6e-IP-iz5" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="350" id="cde-rw-mmo"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="dVw-81-3bp"/>
+                            <constraint firstItem="d6e-IP-iz5" firstAttribute="leading" secondItem="zaD-4n-63J" secondAttribute="trailing" constant="8" id="ibd-V1-hgq"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="16" id="mq5-eh-JMf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d6e-IP-iz5" secondAttribute="trailing" constant="318" id="py4-SV-IM3"/>
                             <constraint firstAttribute="trailing" secondItem="hbF-dB-aak" secondAttribute="trailing" constant="16" id="srI-yT-Ocl"/>
+                            <constraint firstItem="d6e-IP-iz5" firstAttribute="top" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="18" id="zdI-34-1Tt"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -77,6 +110,7 @@
     </scenes>
     <resources>
         <image name="AlbumCover" width="374" height="372"/>
+        <image name="IconOptions" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
