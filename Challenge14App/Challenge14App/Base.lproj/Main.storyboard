@@ -170,6 +170,7 @@
                             <constraint firstItem="96K-zG-rEw" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="46" id="Qhx-iI-RBv"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="96K-zG-rEw" secondAttribute="trailing" constant="163" id="Vfv-wt-h12"/>
                             <constraint firstItem="1Ce-dF-qKe" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="46" id="WPG-Um-PVP"/>
+                            <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="hbF-dB-aak" secondAttribute="trailing" constant="16" id="XWh-3U-g3w"/>
                             <constraint firstItem="1Ce-dF-qKe" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="59" id="Y9N-Tg-klz"/>
                             <constraint firstItem="zaD-4n-63J" firstAttribute="top" secondItem="rjB-FG-LEq" secondAttribute="bottom" id="YSC-9n-HuH"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zaD-4n-63J" secondAttribute="trailing" symbolic="YES" id="Zjw-wo-TF7"/>
@@ -188,7 +189,6 @@
                             <constraint firstItem="RH5-If-7Ns" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="mBj-Kb-x3r"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="16" id="mq5-eh-JMf"/>
                             <constraint firstItem="d6e-IP-iz5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rjB-FG-LEq" secondAttribute="trailing" constant="8" symbolic="YES" id="oHt-6R-hU7"/>
-                            <constraint firstAttribute="trailing" secondItem="hbF-dB-aak" secondAttribute="trailing" constant="16" id="srI-yT-Ocl"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="RH5-If-7Ns" secondAttribute="trailing" constant="16" id="uBo-1X-JWV"/>
                         </constraints>
                     </view>
