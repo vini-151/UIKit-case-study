@@ -59,10 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="s7S-Tx-iOK">
-                                <rect key="frame" x="0.0" y="-112" width="402" height="874"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="s7S-Tx-iOK" secondAttribute="height" multiplier="201:437" id="RSt-Wv-BjN"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="852"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="1" scale="large"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumCover" translatesAutoresizingMaskIntoConstraints="NO" id="hbF-dB-aak">
@@ -75,19 +72,19 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forever Outsider" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-FG-LEq" userLabel="songTitle">
-                                <rect key="frame" x="16" y="438" width="146.33333333333334" height="24"/>
+                                <rect key="frame" x="16" y="454" width="146.33333333333334" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" name="titleSongColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evergrey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaD-4n-63J" userLabel="albumTitle">
-                                <rect key="frame" x="16.000000000000004" y="462" width="60.333333333333343" height="18"/>
+                                <rect key="frame" x="16.000000000000004" y="478" width="60.333333333333343" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" name="titleArtistColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-If-7Ns" userLabel="songSlider">
-                                <rect key="frame" x="16" y="496" width="358" height="7"/>
+                                <rect key="frame" x="16" y="512" width="358" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="NKV-So-vqY"/>
                                 </constraints>
@@ -96,7 +93,7 @@
                                 <color key="thumbTintColor" name="sliderSongThumbColor"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-9Z-fDH" userLabel="initialTimeMusic">
-                                <rect key="frame" x="16" y="510" width="28" height="16"/>
+                                <rect key="frame" x="16" y="526" width="28" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="P5N-TR-VAM"/>
                                 </constraints>
@@ -105,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsC-QT-L8w" userLabel="endTimeMusic">
-                                <rect key="frame" x="339.33333333333331" y="510" width="34.666666666666686" height="16"/>
+                                <rect key="frame" x="339.33333333333331" y="526" width="34.666666666666686" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="dpV-YM-Nj6"/>
                                 </constraints>
@@ -114,7 +111,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" toolTip="play" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="96K-zG-rEw" userLabel="pauseButton">
-                                <rect key="frame" x="169.66666666666666" y="549" width="51" height="60"/>
+                                <rect key="frame" x="169.66666666666666" y="565" width="51" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" priority="900" constant="64" id="AQS-8K-MHs"/>
                                     <constraint firstAttribute="width" secondItem="96K-zG-rEw" secondAttribute="height" multiplier="17:20" id="Hsq-A2-22Z"/>
@@ -130,7 +127,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iET-iR-6hF" userLabel="forwardButton">
-                                <rect key="frame" x="260.66666666666669" y="549" width="83.666666666666686" height="52"/>
+                                <rect key="frame" x="260.66666666666669" y="565" width="83.666666666666686" height="52"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
@@ -140,7 +137,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ce-dF-qKe" userLabel="backButton">
-                                <rect key="frame" x="46.000000000000007" y="549" width="83.666666666666686" height="52"/>
+                                <rect key="frame" x="46.000000000000007" y="565" width="83.666666666666686" height="52"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
@@ -150,7 +147,7 @@
                                 </buttonConfiguration>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UDf-1n-v7r">
-                                <rect key="frame" x="16" y="633" width="358" height="34"/>
+                                <rect key="frame" x="16" y="649" width="358" height="34"/>
                                 <color key="tintColor" name="sliderSecondForegroundColor"/>
                                 <imageReference key="minimumValueImage" image="speaker.fill" catalog="system" symbolScale="medium"/>
                                 <imageReference key="maximumValueImage" image="speaker.wave.2.fill" catalog="system" symbolScale="medium"/>
@@ -159,7 +156,7 @@
                                 <color key="thumbTintColor" name="sliderVolumeThumbColor"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6e-IP-iz5" userLabel="optionButton">
-                                <rect key="frame" x="326" y="442" width="48" height="38"/>
+                                <rect key="frame" x="326" y="459" width="48" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="IconOptions"/>
                             </button>
@@ -171,16 +168,19 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="423"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
-                            <constraint firstItem="rjB-FG-LEq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="7" id="90b-FV-FQ8"/>
                             <constraint firstItem="96K-zG-rEw" firstAttribute="centerX" secondItem="B2a-X6-vAH" secondAttribute="centerX" constant="200" id="9bh-EE-emg">
                                 <variation key="heightClass=compact-widthClass=regular" constant="200"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="rjB-FG-LEq" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="14" id="Cox-Gj-1lS">
-                                <variation key="heightClass=compact-widthClass=regular" constant="14"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="379"/>
+                            <constraint firstItem="rjB-FG-LEq" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="80" id="Cox-Gj-1lS">
+                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="395"/>
                             </constraint>
                             <constraint firstItem="iET-iR-6hF" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" priority="900" constant="46" id="DaY-lN-awV"/>
+                            <constraint firstItem="d6e-IP-iz5" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="80" id="Eee-7a-zTZ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="400"/>
+                            </constraint>
                             <constraint firstItem="UDf-1n-v7r" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="423" id="FVJ-ep-4wu">
                                 <variation key="heightClass=compact-widthClass=regular" constant="423"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
@@ -194,18 +194,19 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="423"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
-                            <constraint firstItem="g8b-K0-B1x" firstAttribute="top" secondItem="s7S-Tx-iOK" secondAttribute="top" constant="171" id="PHv-9R-IZG"/>
-                            <constraint firstItem="s7S-Tx-iOK" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" id="SqV-3b-5jV"/>
+                            <constraint firstAttribute="trailing" secondItem="s7S-Tx-iOK" secondAttribute="trailing" id="S4q-aY-E5g"/>
                             <constraint firstItem="1Ce-dF-qKe" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" priority="900" constant="46" id="WPG-Um-PVP"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="hbF-dB-aak" secondAttribute="trailing" constant="350" id="XWh-3U-g3w">
                                 <variation key="heightClass=compact-widthClass=regular" constant="350"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="zaD-4n-63J" firstAttribute="top" secondItem="rjB-FG-LEq" secondAttribute="bottom" id="YSC-9n-HuH"/>
-                            <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="d6e-IP-iz5" secondAttribute="trailing" constant="16" id="amx-pA-hD2"/>
+                            <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="d6e-IP-iz5" secondAttribute="trailing" constant="8" id="amx-pA-hD2">
+                                <variation key="heightClass=compact-widthClass=regular" constant="8"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
                             <constraint firstItem="UDf-1n-v7r" firstAttribute="trailing" secondItem="XsC-QT-L8w" secondAttribute="trailing" id="bHH-IJ-MPx"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="XsC-QT-L8w" secondAttribute="trailing" constant="16" id="bPB-on-foN"/>
-                            <constraint firstItem="g8b-K0-B1x" firstAttribute="bottom" secondItem="s7S-Tx-iOK" secondAttribute="bottom" id="bao-3S-mfZ"/>
                             <constraint firstItem="iET-iR-6hF" firstAttribute="leading" secondItem="96K-zG-rEw" secondAttribute="trailing" constant="20" id="dJN-7g-cJE">
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
@@ -215,7 +216,6 @@
                             <constraint firstItem="XsC-QT-L8w" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="7" id="e0U-CX-2en"/>
                             <constraint firstItem="2iy-9Z-fDH" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="7" id="fKX-0a-Y8j"/>
                             <constraint firstItem="UDf-1n-v7r" firstAttribute="top" secondItem="96K-zG-rEw" secondAttribute="bottom" constant="24" id="i5H-De-EZw"/>
-                            <constraint firstItem="d6e-IP-iz5" firstAttribute="top" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="11" id="jI5-a7-r28"/>
                             <constraint firstItem="96K-zG-rEw" firstAttribute="leading" secondItem="1Ce-dF-qKe" secondAttribute="trailing" constant="20" id="koz-Kt-ovs">
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
@@ -228,8 +228,10 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="14"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
+                            <constraint firstItem="s7S-Tx-iOK" firstAttribute="top" secondItem="B2a-X6-vAH" secondAttribute="top" id="qmt-Aq-shJ"/>
+                            <constraint firstAttribute="bottom" secondItem="s7S-Tx-iOK" secondAttribute="bottom" id="rir-2n-Ckv"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="RH5-If-7Ns" secondAttribute="trailing" constant="16" id="uBo-1X-JWV"/>
-                            <constraint firstItem="s7S-Tx-iOK" firstAttribute="trailing" secondItem="g8b-K0-B1x" secondAttribute="trailing" constant="12" id="z3o-he-nxP"/>
+                            <constraint firstItem="s7S-Tx-iOK" firstAttribute="leading" secondItem="B2a-X6-vAH" secondAttribute="leading" id="woC-1X-wya"/>
                         </constraints>
                     </view>
                 </viewController>
