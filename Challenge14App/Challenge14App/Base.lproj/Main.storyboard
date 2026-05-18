@@ -154,7 +154,7 @@
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g8b-K0-B1x"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="XsC-QT-L8w" firstAttribute="leading" secondItem="2iy-9Z-fDH" secondAttribute="trailing" constant="294" id="5RL-ul-mJQ"/>
                             <constraint firstItem="zaD-4n-63J" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="7hN-zw-8qR"/>
@@ -204,6 +204,9 @@
         <image name="pause.fill" catalog="system" width="114" height="128"/>
         <image name="volume.2.fill" catalog="system" width="128" height="88"/>
         <image name="volume.fill" catalog="system" width="128" height="125"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
