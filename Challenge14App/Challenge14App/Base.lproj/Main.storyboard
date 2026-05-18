@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -85,7 +86,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="IconOptions"/>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-If-7Ns">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-If-7Ns" userLabel="songSlider">
                                 <rect key="frame" x="16" y="495" width="358" height="7"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="NKV-So-vqY"/>
@@ -95,26 +96,53 @@
                                 <color key="maximumTrackTintColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-9Z-fDH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-9Z-fDH" userLabel="initialTimeMusic">
                                 <rect key="frame" x="16" y="509" width="28" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="P5N-TR-VAM"/>
-                                    <constraint firstAttribute="width" constant="28" id="r36-Yk-Fv9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsC-QT-L8w">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsC-QT-L8w" userLabel="endTimeMusic">
                                 <rect key="frame" x="338" y="509" width="36" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="dpV-YM-Nj6"/>
-                                    <constraint firstAttribute="width" constant="36" id="nIe-Jg-lWm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96K-zG-rEw" userLabel="pauseButton">
+                                <rect key="frame" x="163" y="548" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="AQS-8K-MHs"/>
+                                    <constraint firstAttribute="width" constant="64" id="DZ9-fd-jjM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="pause.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="48"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iET-iR-6hF" userLabel="forwardButton">
+                                <rect key="frame" x="267" y="548" width="64" height="52"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ce-dF-qKe" userLabel="backButton">
+                                <rect key="frame" x="59" y="548" width="64" height="54.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g8b-K0-B1x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,17 +151,26 @@
                             <constraint firstItem="zaD-4n-63J" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="7hN-zw-8qR"/>
                             <constraint firstItem="rjB-FG-LEq" firstAttribute="top" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="7" id="90b-FV-FQ8"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rjB-FG-LEq" secondAttribute="trailing" constant="20" symbolic="YES" id="9sv-6Q-PCc"/>
+                            <constraint firstItem="iET-iR-6hF" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="46" id="DaY-lN-awV"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="2iy-9Z-fDH" secondAttribute="trailing" constant="346" id="EE7-rj-fTi"/>
+                            <constraint firstItem="iET-iR-6hF" firstAttribute="leading" secondItem="96K-zG-rEw" secondAttribute="trailing" constant="40" id="Jre-lq-zka"/>
                             <constraint firstItem="rjB-FG-LEq" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="MKI-tB-VgK"/>
                             <constraint firstItem="RH5-If-7Ns" firstAttribute="top" secondItem="zaD-4n-63J" secondAttribute="bottom" constant="16" id="Mho-hc-asz"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="d6e-IP-iz5" secondAttribute="trailing" constant="16" id="NU0-Be-31r"/>
                             <constraint firstItem="2iy-9Z-fDH" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="OII-bl-YnB"/>
+                            <constraint firstItem="96K-zG-rEw" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="46" id="Qhx-iI-RBv"/>
+                            <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="96K-zG-rEw" secondAttribute="trailing" constant="163" id="Vfv-wt-h12"/>
+                            <constraint firstItem="1Ce-dF-qKe" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="46" id="WPG-Um-PVP"/>
+                            <constraint firstItem="1Ce-dF-qKe" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="59" id="Y9N-Tg-klz"/>
                             <constraint firstItem="zaD-4n-63J" firstAttribute="top" secondItem="rjB-FG-LEq" secondAttribute="bottom" id="YSC-9n-HuH"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zaD-4n-63J" secondAttribute="trailing" symbolic="YES" id="Zjw-wo-TF7"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="XsC-QT-L8w" secondAttribute="trailing" constant="16" id="bPB-on-foN"/>
+                            <constraint firstItem="96K-zG-rEw" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="163" id="cog-bO-B3Q"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="dVw-81-3bp"/>
                             <constraint firstItem="XsC-QT-L8w" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="7" id="e0U-CX-2en"/>
+                            <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" secondItem="iET-iR-6hF" secondAttribute="trailing" constant="59" id="eSq-BQ-Scw"/>
                             <constraint firstItem="2iy-9Z-fDH" firstAttribute="top" secondItem="RH5-If-7Ns" secondAttribute="bottom" constant="7" id="fKX-0a-Y8j"/>
+                            <constraint firstItem="96K-zG-rEw" firstAttribute="leading" secondItem="1Ce-dF-qKe" secondAttribute="trailing" constant="40" id="fuK-Qg-trI"/>
                             <constraint firstItem="d6e-IP-iz5" firstAttribute="leading" secondItem="zaD-4n-63J" secondAttribute="trailing" constant="8" id="ibd-V1-hgq"/>
                             <constraint firstItem="RH5-If-7Ns" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="mBj-Kb-x3r"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="16" id="mq5-eh-JMf"/>
@@ -150,6 +187,9 @@
     <resources>
         <image name="AlbumCover" width="374" height="372"/>
         <image name="IconOptions" width="24" height="24"/>
+        <image name="backward.fill" catalog="system" width="128" height="76"/>
+        <image name="forward.fill" catalog="system" width="128" height="76"/>
+        <image name="pause.fill" catalog="system" width="114" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
