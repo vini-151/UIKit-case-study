@@ -26,9 +26,8 @@ struct SwiftUIView: View {
             .padding()
             
             ScrollView{
-                Rectangle()
-                    .frame(width: 300, height: 300)
-                    .foregroundStyle(.red)
+                Image("Album")
+                    .scaledToFit()
                 
                 Text("Pisando no UIKit!")
                     .font(.title2)
