@@ -47,7 +47,7 @@ struct SwiftUIView: View {
                     Button(){
                         //abrir o play do storyboard
                     }label:{
-                        Label("Play", systemImage: "play")
+                        Label("Play", systemImage: "play.fill")
                             .font(.subheadline).fontWeight(.semibold)
                             .foregroundStyle(Color(red: 0.98, green: 0.18, blue: 0.33))
                             .frame(maxWidth: .infinity, minHeight: 44)
@@ -81,6 +81,8 @@ struct SwiftUIView: View {
                                         Text("\(songs[index].number)")
                                             .foregroundStyle(.gray)
                                     } else {
+                                        Image(systemName: "star.fill")
+                                            .foregroundStyle(.gray)
                                         Text("\(songs[index].number)")
                                             .foregroundStyle(.gray)
                                     }
@@ -96,7 +98,7 @@ struct SwiftUIView: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             
                             
-                            Image(systemName: "arrow.down.circle")
+                            Image(systemName: "icloud.and.arrow.down")
                                 .font(.title3)
                                 .foregroundStyle(Color(red: 0.98, green: 0.18, blue: 0.33))
                             
