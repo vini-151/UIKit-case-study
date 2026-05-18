@@ -13,15 +13,40 @@ struct SwiftUIView: View {
     var body: some View {
         NavigationStack(){
             HStack{
-                Button("Voltar"){
+                Button{
                     dismiss()
+                }label: {
+                    HStack{
+                        Image(systemName: "chevron.left")
+                        Text("Listen now")
+                    }
+                    .foregroundStyle(.red)
                 }
                 
                 Spacer()
                 
-                Button("a"){
+                Button{
                     
+                }label: {
+                    Image(systemName: "checkmark")
+                        .padding(6)
+                        .padding(.vertical, 1)
+                        .foregroundStyle(Color.red)
                 }
+                .background(.btnBg)
+                .clipShape(RoundedRectangle(cornerRadius: 160000, style: .continuous))
+                
+                Button{
+                    
+                }label: {
+                    Image(systemName: "ellipsis")
+                        .padding(6)
+                        .padding(.vertical, 6)
+                        .foregroundStyle(Color.red)
+                }
+                .background(.btnBg)
+                .clipShape(RoundedRectangle(cornerRadius: 160000, style: .continuous))
+                
             }
             .padding()
             
@@ -51,7 +76,7 @@ struct SwiftUIView: View {
                             .font(.subheadline).fontWeight(.semibold)
                             .foregroundStyle(Color(red: 0.98, green: 0.18, blue: 0.33))
                             .frame(maxWidth: .infinity, minHeight: 44)
-                            .background(RoundedRectangle(cornerRadius: 10).fill(.white.opacity(0.08)))
+                            .background(RoundedRectangle(cornerRadius: 10).fill(.btnBg))
                     }
                     
                     Button(){
@@ -61,7 +86,7 @@ struct SwiftUIView: View {
                             .font(.subheadline).fontWeight(.semibold)
                             .foregroundStyle(Color(red: 0.98, green: 0.18, blue: 0.33))
                             .frame(maxWidth: .infinity, minHeight: 44)
-                            .background(RoundedRectangle(cornerRadius: 10).fill(.white.opacity(0.08)))
+                            .background(RoundedRectangle(cornerRadius: 10).fill(.btnBg))
                     }
                 } .buttonStyle(.plain)
                     .padding(.horizontal)
@@ -114,10 +139,9 @@ struct SwiftUIView: View {
             }
         }
         .background(Color(red: 0.11, green: 0.11, blue: 0.18).ignoresSafeArea())
-        .navigationTitle("Listen Now")
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(.dark, for: .navigationBar)
-        .preferredColorScheme(.dark)
+//        .preferredColorScheme(.dark)
         
         Spacer()
         
