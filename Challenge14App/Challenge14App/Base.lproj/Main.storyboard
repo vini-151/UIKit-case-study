@@ -83,6 +83,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="IconOptions"/>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-If-7Ns">
+                                <rect key="frame" x="16" y="495" width="358" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="7" id="NKV-So-vqY"/>
+                                    <constraint firstAttribute="width" constant="358" id="lXX-Ng-C1q"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g8b-K0-B1x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,12 +101,15 @@
                             <constraint firstItem="rjB-FG-LEq" firstAttribute="top" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="7" id="90b-FV-FQ8"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rjB-FG-LEq" secondAttribute="trailing" constant="20" symbolic="YES" id="9sv-6Q-PCc"/>
                             <constraint firstItem="rjB-FG-LEq" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="MKI-tB-VgK"/>
+                            <constraint firstItem="RH5-If-7Ns" firstAttribute="top" secondItem="zaD-4n-63J" secondAttribute="bottom" constant="16" id="Mho-hc-asz"/>
                             <constraint firstItem="zaD-4n-63J" firstAttribute="top" secondItem="rjB-FG-LEq" secondAttribute="bottom" id="YSC-9n-HuH"/>
                             <constraint firstItem="g8b-K0-B1x" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zaD-4n-63J" secondAttribute="trailing" symbolic="YES" id="Zjw-wo-TF7"/>
                             <constraint firstItem="d6e-IP-iz5" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="350" id="cde-rw-mmo"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="dVw-81-3bp"/>
                             <constraint firstItem="d6e-IP-iz5" firstAttribute="leading" secondItem="zaD-4n-63J" secondAttribute="trailing" constant="8" id="ibd-V1-hgq"/>
+                            <constraint firstItem="RH5-If-7Ns" firstAttribute="leading" secondItem="g8b-K0-B1x" secondAttribute="leading" constant="16" id="mBj-Kb-x3r"/>
                             <constraint firstItem="hbF-dB-aak" firstAttribute="top" secondItem="g8b-K0-B1x" secondAttribute="top" constant="16" id="mq5-eh-JMf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RH5-If-7Ns" secondAttribute="trailing" constant="16" id="pCe-8D-z3g"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d6e-IP-iz5" secondAttribute="trailing" constant="318" id="py4-SV-IM3"/>
                             <constraint firstAttribute="trailing" secondItem="hbF-dB-aak" secondAttribute="trailing" constant="16" id="srI-yT-Ocl"/>
                             <constraint firstItem="d6e-IP-iz5" firstAttribute="top" secondItem="hbF-dB-aak" secondAttribute="bottom" constant="18" id="zdI-34-1Tt"/>
