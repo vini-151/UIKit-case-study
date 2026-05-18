@@ -68,6 +68,7 @@
                                     <constraint firstAttribute="height" constant="356" id="QPQ-Mb-cBW"/>
                                     <constraint firstAttribute="width" secondItem="hbF-dB-aak" secondAttribute="height" multiplier="179:178" id="qMB-Rq-mt1"/>
                                 </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forever Outsider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-FG-LEq" userLabel="songTitle">
                                 <rect key="frame" x="16" y="438" width="149.66666666666666" height="20"/>
@@ -213,7 +214,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AlbumCover" width="374" height="372"/>
+        <image name="AlbumCover" width="358" height="356"/>
         <image name="IconOptions" width="24" height="24"/>
         <image name="backgroundGradient" width="402" height="874"/>
         <image name="backward.fill" catalog="system" width="128" height="76"/>
