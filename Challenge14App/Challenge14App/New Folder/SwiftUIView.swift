@@ -82,7 +82,6 @@ struct SwiftUIView: View {
                             
                             Text(songs[index].name)
                                 .font(.body)
-                                .foregroundStyle(.white)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             
                             
