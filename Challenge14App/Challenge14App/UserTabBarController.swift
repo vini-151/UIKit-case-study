@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import SwiftUI
 
 class UserTabBarController: UITabBarController {
+    
+    lazy var miniPlayer: UIView = {
+        let view = UIHostingController(rootView: MiniPlayer()).view!
+
+        
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +52,17 @@ class UserTabBarController: UITabBarController {
         let nav5 = UINavigationController(rootViewController: vc5)
         
         setViewControllers([nav1, nav2, nav3, nav4, nav5], animated: true)
+        
+        
+        
+        view.addSubview(miniPlayer)
+        
+        miniPlayer.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            miniPlayer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -70),
+            miniPlayer.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor, constant: 1),
+            ])
 
     }
 }
