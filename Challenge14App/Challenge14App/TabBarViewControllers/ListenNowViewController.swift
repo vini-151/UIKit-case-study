@@ -6,37 +6,39 @@
 //
 
 import UIKit
+import CoreData
+import SwiftUI
+
 
 class ListenNowViewController: UIViewController {
     
     lazy var button: UIButton = {
         let button = UIButton()
+
         button.setTitle("Ir para o detalhe do albúm", for: .normal)
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.systemPink, for: .normal)
+        
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
         return button
     }()
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
         
         configureUI()
     }
     
     func configureUI() {
         
-        view.backgroundColor = .black
+        
         
         // Titulo
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Listen Now"
         
-        navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.largeTitleTextAttributes = [
-            .foregroundColor: UIColor.white
-        ]
         
         // Botão de perfil
         let config = UIImage.SymbolConfiguration(pointSize: 26, weight: .medium)
@@ -57,6 +59,12 @@ class ListenNowViewController: UIViewController {
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+        
+        
+
+        
+        
+        
     }
         
         @objc private func didTapProfile() {
