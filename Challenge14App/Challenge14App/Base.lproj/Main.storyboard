@@ -419,6 +419,7 @@
                                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                                             </constraint>
+                                            <constraint firstAttribute="height" constant="1000" id="DF3-Bj-p4R"/>
                                             <constraint firstAttribute="trailing" secondItem="w6X-2z-PJL" secondAttribute="trailing" constant="16" id="VLg-B9-byl">
                                                 <variation key="heightClass=compact-widthClass=compact" constant="380"/>
                                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
