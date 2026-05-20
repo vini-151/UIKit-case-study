@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="imB-De-6mP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <accessibilityOverrides dynamicTypePreference="11"/>
     <dependencies>
@@ -11,41 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Aro-Yq-uex">
-            <objects>
-                <viewController id="imB-De-6mP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="76v-QE-wpH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q0-DM-mIH">
-                                <rect key="frame" x="127" y="396" width="110" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="T1t-ZM-0mB"/>
-                                    <constraint firstAttribute="width" constant="110" id="l7G-S7-Ing"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="abrir modal"/>
-                                <connections>
-                                    <segue destination="MOo-kN-FSQ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="dUR-uI-E9y"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="gex-zP-b5g"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="5Q0-DM-mIH" firstAttribute="top" secondItem="gex-zP-b5g" secondAttribute="top" constant="278" id="BNa-t6-yoM"/>
-                            <constraint firstItem="gex-zP-b5g" firstAttribute="trailing" secondItem="5Q0-DM-mIH" secondAttribute="trailing" constant="156" id="ZAI-VT-1tg"/>
-                            <constraint firstItem="gex-zP-b5g" firstAttribute="bottom" secondItem="5Q0-DM-mIH" secondAttribute="bottom" constant="353" id="eoR-Ru-xhf"/>
-                            <constraint firstItem="5Q0-DM-mIH" firstAttribute="leading" secondItem="gex-zP-b5g" secondAttribute="leading" constant="127" id="irC-dc-Xg2"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IhC-2f-0yK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-793" y="124"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="zfE-Im-SuI">
             <objects>
@@ -255,28 +220,28 @@
             </objects>
             <point key="canvasLocation" x="1656" y="112"/>
         </scene>
-        <!--View Controller-->
+        <!--StoryboardViewController-->
         <scene sceneID="x5X-tL-Puv">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="MOo-kN-FSQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StoryboardViewControllerID" title="StoryboardViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MOo-kN-FSQ" customClass="ViewController" customModule="Challenge14App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xhZ-7F-QSn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="0pw-Kn-Yhy">
-                                <rect key="frame" x="0.0" y="0.0" width="402.66666666666669" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="852"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5j-4C-Y7n">
-                                <rect key="frame" x="0.0" y="59" width="402.66666666666669" height="793"/>
+                                <rect key="frame" x="0.0" y="118" width="402" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lh7-Mv-TIv" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="402.66666666666669" height="793"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="734"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w6X-2z-PJL" userLabel="ImageStackView">
                                                 <rect key="frame" x="16" y="16" width="358" height="356"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumCover" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-rY-hIX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="356"/>
+                                                        <rect key="frame" x="2" y="0.0" width="356" height="356"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ke5-rY-hIX" secondAttribute="height" multiplier="1:1" id="45w-cL-fuZ"/>
                                                             <constraint firstAttribute="width" constant="358" id="jyB-79-AfP"/>
@@ -294,22 +259,22 @@
                                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5ry-xa-Rlf" userLabel="ControlMusicStackView">
-                                                <rect key="frame" x="16" y="388" width="370.66666666666669" height="241.33333333333337"/>
+                                                <rect key="frame" x="16" y="388" width="370" height="241.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-6g-ZPp" userLabel="InformationSongHorizontalView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="370.66666666666669" height="38.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="370" height="38.333333333333336"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-1H-wtN" userLabel="NamesSongVStackView">
-                                                                <rect key="frame" x="0.0" y="0.0" width="370.66666666666669" height="38.333333333333336"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="38.333333333333336"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Forever Outsider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-vN-33H">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="370.66666666666669" height="20.333333333333332"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="370" height="20.333333333333332"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                         <color key="textColor" name="titleSongColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evergrey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKv-81-R9w">
-                                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="370.66666666666669" height="18"/>
+                                                                        <rect key="frame" x="0.0" y="20.333333333333371" width="370" height="18"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                                         <color key="textColor" name="titleArtistColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -328,16 +293,16 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kdc-ga-qdi" userLabel="TimeSongVStackView">
-                                                        <rect key="frame" x="0.0" y="54.333333333333314" width="370.66666666666669" height="49.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="54.333333333333371" width="370" height="49.666666666666657"/>
                                                         <subviews>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="64K-Lz-iBA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="370.66666666666669" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="34"/>
                                                                 <color key="minimumTrackTintColor" name="sliderForegroundColor"/>
                                                                 <color key="maximumTrackTintColor" name="sliderSecondForegroundColor"/>
                                                                 <color key="thumbTintColor" name="sliderSongThumbColor"/>
                                                             </slider>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="aAQ-DF-caS" userLabel="HorizontalTimesStackView">
-                                                                <rect key="frame" x="0.0" y="34.000000000000057" width="370.66666666666669" height="15.666666666666664"/>
+                                                                <rect key="frame" x="0.0" y="34" width="370" height="15.666666666666664"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFB-LG-Qwa" userLabel="initTimeText">
                                                                         <rect key="frame" x="0.0" y="0.0" width="28" height="15.666666666666666"/>
@@ -346,7 +311,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-0:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugu-Gv-tyD" userLabel="endTimeText">
-                                                                        <rect key="frame" x="336" y="0.0" width="34.666666666666686" height="15.666666666666666"/>
+                                                                        <rect key="frame" x="335.33333333333331" y="0.0" width="34.666666666666686" height="15.666666666666666"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                                         <color key="textColor" name="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -356,10 +321,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="EwP-5p-buR" userLabel="PlayMusicControlsHStackView">
-                                                        <rect key="frame" x="0.0" y="120" width="370.66666666666669" height="71.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="120" width="370" height="71.333333333333314"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uso-wH-YGm" userLabel="backButton">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="71.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="71.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
@@ -367,7 +332,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK8-A9-ATO" userLabel="playButton">
-                                                                <rect key="frame" x="128" y="0.0" width="114.66666666666669" height="71.333333333333329"/>
+                                                                <rect key="frame" x="127.66666666666666" y="0.0" width="114.66666666666666" height="71.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="pause.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="48"/>
@@ -375,7 +340,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53T-qW-jn6" userLabel="ForwardButton">
-                                                                <rect key="frame" x="242.66666666666669" y="0.0" width="128" height="71.333333333333329"/>
+                                                                <rect key="frame" x="242.33333333333329" y="0.0" width="127.66666666666666" height="71.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
@@ -385,10 +350,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-OU-dbs" userLabel="VolumeHorizontalStackView">
-                                                        <rect key="frame" x="0.0" y="207.33333333333337" width="370.66666666666669" height="34"/>
+                                                        <rect key="frame" x="0.0" y="207.33333333333337" width="370" height="34"/>
                                                         <subviews>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="speaker.fill" catalog="system" maximumValueImage="speaker.wave.2.fill" translatesAutoresizingMaskIntoConstraints="NO" id="clA-Yb-oRB" userLabel="volumeSilder">
-                                                                <rect key="frame" x="0.0" y="0.0" width="370.66666666666669" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="34"/>
                                                                 <color key="tintColor" name="textColor"/>
                                                                 <color key="minimumTrackTintColor" name="sliderForegroundColor"/>
                                                                 <color key="maximumTrackTintColor" name="sliderSecondForegroundColor"/>
@@ -476,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rp-2r-TON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191.6030534351145" y="123.94366197183099"/>
+            <point key="canvasLocation" x="192" y="111"/>
         </scene>
     </scenes>
     <resources>

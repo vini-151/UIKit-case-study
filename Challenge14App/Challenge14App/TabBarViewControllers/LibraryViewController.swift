@@ -1,16 +1,17 @@
 //
-//  ViewController.swift
+//  LibraryViewController.swift
 //  Challenge14App
 //
-//  Created by Larissa Kailane on 20/05/26.
+//  Created by Rebeca Maria de Morais Guimães on 19/05/26.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LibraryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
 
         // Do any additional setup after loading the view.
     }
