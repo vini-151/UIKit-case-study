@@ -223,7 +223,7 @@
         <!--StoryboardViewController-->
         <scene sceneID="x5X-tL-Puv">
             <objects>
-                <viewController storyboardIdentifier="StoryboardViewControllerID" title="StoryboardViewController" modalTransitionStyle="flipHorizontal" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MOo-kN-FSQ" customClass="ViewController" customModule="Challenge14App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StoryboardViewControllerID" autoresizesArchivedViewToFullSize="NO" title="StoryboardViewController" modalPresentationStyle="formSheet" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MOo-kN-FSQ" customClass="ViewController" customModule="Challenge14App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xhZ-7F-QSn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,20 +261,20 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5ry-xa-Rlf" userLabel="ControlMusicStackView">
                                                 <rect key="frame" x="16" y="388" width="370" height="241.33333333333337"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-6g-ZPp" userLabel="InformationSongHorizontalView">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-6g-ZPp" userLabel="InformationSongHorizontalView">
                                                         <rect key="frame" x="0.0" y="0.0" width="370" height="38.333333333333336"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-1H-wtN" userLabel="NamesSongVStackView">
-                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="38.333333333333336"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="330" height="38.333333333333336"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Forever Outsider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-vN-33H">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="370" height="20.333333333333332"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="20.333333333333332"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                         <color key="textColor" name="titleSongColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evergrey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKv-81-R9w">
-                                                                        <rect key="frame" x="0.0" y="20.333333333333371" width="370" height="18"/>
+                                                                        <rect key="frame" x="0.0" y="20.333333333333371" width="330" height="18"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                                         <color key="textColor" name="titleArtistColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -284,6 +284,11 @@
                                                                     <constraint firstItem="GKv-81-R9w" firstAttribute="top" secondItem="ooP-vN-33H" secondAttribute="bottom" id="kZ4-hg-gKb"/>
                                                                 </constraints>
                                                             </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjV-X2-NZL">
+                                                                <rect key="frame" x="330" y="0.0" width="40" height="38.333333333333336"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="IconOptions" title=""/>
+                                                            </button>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="4rY-1H-wtN" secondAttribute="bottom" id="Dm3-zm-7ac"/>

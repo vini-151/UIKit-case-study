@@ -87,7 +87,7 @@ class UserTabBarController: UITabBarController {
         
         if let storyboardMain = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryboardViewControllerID") as? ViewController{
             
-            self.navigationController?.modalPresentationStyle = .pageSheet
+            self.navigationController?.modalPresentationStyle = .automatic
             self.present(storyboardMain, animated: true)
 //            self.navigationController?.pushViewController(storyboardMain, animated: true)
         }
