@@ -10,18 +10,27 @@ import SwiftUI
 
 class UserTabBarController: UITabBarController {
     
-    lazy var miniPlayer: UIView = {
+    @IBOutlet lazy var miniPlayer: UIView! = {
         let view = UIHostingController(rootView: MiniPlayer()).view!
-
+        
         
         return view
     }()
-
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.tintColor = .systemPink
-
+        
         configureTabs()
+        
+        let touchGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        miniPlayer.addGestureRecognizer(touchGesture)
+        
     }
     
     private func configureTabs() {
@@ -44,7 +53,7 @@ class UserTabBarController: UITabBarController {
         vc3.tabBarItem.title = "Radio"
         vc4.tabBarItem.title = "Library"
         vc5.tabBarItem.title = "Search"
-    
+        
         let nav1 = UINavigationController(rootViewController: vc1)
         let nav2 = UINavigationController(rootViewController: vc2)
         let nav3 = UINavigationController(rootViewController: vc3)
@@ -57,13 +66,33 @@ class UserTabBarController: UITabBarController {
         
         view.addSubview(miniPlayer)
         
+        miniPlayer.isUserInteractionEnabled = true
+        
+        
+        
         miniPlayer.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             miniPlayer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -70),
             miniPlayer.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor, constant: 1),
-            ])
-
+        ])
+        
+        
+        
+        
     }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        print("tocou no trem")
+        
+        if let storyboardMain = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryboardViewControllerID") as? ViewController{
+            
+            self.navigationController?.modalPresentationStyle = .automatic
+            self.present(storyboardMain, animated: true)
+//            self.navigationController?.pushViewController(storyboardMain, animated: true)
+        }
+        
+    }
+    
 }
 

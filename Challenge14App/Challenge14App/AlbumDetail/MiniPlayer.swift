@@ -24,6 +24,11 @@ struct MiniPlayer: View {
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
             }
+            
+            .onTapGesture {
+                
+            }
+            
             .padding(.leading, 40)
             
             Spacer()
