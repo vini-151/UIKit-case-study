@@ -39,19 +39,21 @@ struct MiniPlayer: View {
                     Image(systemName: "play.fill")
                         .font(.title)
                 }
-                .foregroundStyle(Color(.white))
+                .foregroundStyle(.red)
                 Button{
                 }label: {
                     Image(systemName: "forward.fill")
                         .font(.title)
                 }
-                .foregroundStyle(Color(.white))
+                .foregroundStyle(.red)
+
                 
             }.padding(30)
                
             
             
-        } .background(RoundedRectangle(cornerRadius: 600).fill(.btnBg))
+        } .background(RoundedRectangle(cornerRadius: 600).fill(.btnBg.opacity(0.55)))
+            .glassEffect()
 //            .padding(.horizontal, 10)
            
            
