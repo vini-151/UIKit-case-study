@@ -24,6 +24,7 @@ struct MiniPlayer: View {
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
             }
+            .minimumScaleFactor(0.5)
             
             .onTapGesture {
                 
@@ -38,12 +39,14 @@ struct MiniPlayer: View {
                 }label: {
                     Image(systemName: "play.fill")
                         .font(.title)
+                        .minimumScaleFactor(0.5)
                 }
                 .foregroundStyle(.red)
                 Button{
                 }label: {
                     Image(systemName: "forward.fill")
                         .font(.title)
+                        .minimumScaleFactor(0.5)
                 }
                 .foregroundStyle(.red)
 
