@@ -87,7 +87,12 @@ class UserTabBarController: UITabBarController {
         
         if let storyboardMain = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryboardViewControllerID") as? ViewController{
             
-            self.navigationController?.modalPresentationStyle = .automatic
+            if let sheet = storyboardMain.sheetPresentationController {
+                    sheet.detents = [.large()] //Era para fazer a modal ocupar a tela inteira
+                    sheet.prefersGrabberVisible = true //Exibe o sinalizador no topo
+                }
+            
+            self.navigationController?.modalPresentationStyle = .pageSheet
             self.present(storyboardMain, animated: true)
 //            self.navigationController?.pushViewController(storyboardMain, animated: true)
         }
