@@ -13,7 +13,7 @@ class UserTabBarController: UITabBarController {
     @IBOutlet lazy var miniPlayer: UIView! = {
         let view = UIHostingController(rootView: MiniPlayer()).view!
         
-        
+        view.backgroundColor = .clear
         return view
     }()
     
