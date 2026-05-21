@@ -26,7 +26,7 @@ struct SwiftUIView: View {
                     .bold()
                     .foregroundStyle(.red)
                 
-                Text("Metal pesadÃ£o - 2026")
+                Text("Metal pesadão - 2026")
                     .font(.callout)
                     .foregroundStyle(.gray)
                 
@@ -92,17 +92,19 @@ struct SwiftUIView: View {
                         }
                         Divider().overlay(.white.opacity(0.08)).padding(.horizontal)
                     }
-                    
+                    Rectangle()
+                        .frame(height: 90)
+                        .opacity(0)
                 }//hstack
                 .padding(.horizontal)
-                .padding(.vertical, 10)
+                
                 
                 
             }
         }
 //        .preferredColorScheme(.dark)
         
-        Spacer()
+        
         
         
     }
