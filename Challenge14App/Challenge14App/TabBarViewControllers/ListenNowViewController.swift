@@ -45,6 +45,19 @@ class ListenNowViewController: UIViewController {
         configureUI()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+         
+        // Remove qualquer deslocamento (transform) e devolve a barra para a posição original (.identity)
+        navigationController?.navigationBar.transform = .identity
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        scrollViewDidScroll(homeFeedTable)
+    }
+    
     func configureTopBar() {
         
         // Titulo
@@ -125,12 +138,22 @@ extension ListenNowViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     //Altura da célula
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 170
     }
     
     //Altura da seção
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 40
     }
     
@@ -157,12 +180,12 @@ extension ListenNowViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     //Função para esconder a toolbar quando escrola verticalmente
-//    func scrollViewDidScroll(_ scrollView: UIScrollView){
-//        let defaultOffset = view.safeAreaInsets.top
-//        let offset = scrollView.contentOffset.y + defaultOffset
-//        
-//        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
-//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView){
+        let defaultOffset = view.safeAreaInsets.top
+        let offset = scrollView.contentOffset.y + defaultOffset
+        
+        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
+    }
 }
 
 extension ListenNowViewController: CollectionViewTableViewCellDelegate{

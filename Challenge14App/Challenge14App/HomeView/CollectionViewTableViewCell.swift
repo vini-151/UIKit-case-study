@@ -58,6 +58,7 @@ class CollectionViewTableViewCell: UITableViewCell {
             collectionView.topAnchor.constraint(equalTo: contentView.topAnchor),
             collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            collectionView.heightAnchor.constraint(equalToConstant: 160)
         ]
         
         NSLayoutConstraint.activate(collectionViewConstraints)
